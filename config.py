@@ -3,10 +3,10 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'XTn7Q~wnsIcb1_aQHz3KJeoAiEEX6vi2V4nDJ'
+    SECRET_KEY = os.environ.get('SECRET_KEY') or '0mt7Q~hRsSoitiZNsA9x7gHIUggXorPy12jvn'
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'articlecms'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'AmqDK7TS1cr8P7MpLvy30mu/oFyJSLGRGQXe4GrOkM5FO37AxJwOu8N3dnPwRk0orlr/aJF5mrfTTP3kjJ0iAg=='
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'BG2tHbq0Q+yfek/QIPp5ano8YfpTVg6xlkABE7zgTOg41d9tv+mNmdkKEQnYIrlE017R+3QzuoDhywGEVJv2Lw=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'article-cms-container'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'articlecms-09.database.windows.net'
@@ -19,7 +19,7 @@ class Config(object):
 
     ### Info for MS Authentication ###
     ### As adapted from: https://github.com/Azure-Samples/ms-identity-python-webapp ###
-    CLIENT_SECRET = "XTn7Q~wnsIcb1_aQHz3KJeoAiEEX6vi2V4nDJ"
+    CLIENT_SECRET = "0mt7Q~hRsSoitiZNsA9x7gHIUggXorPy12jvn"
     # In your production app, Microsoft recommends you to use other ways to store your secret,
     # such as KeyVault, or environment variable as described in Flask's documentation here:
     # https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
@@ -27,12 +27,12 @@ class Config(object):
     # if not CLIENT_SECRET:
     #     raise ValueError("Need to define CLIENT_SECRET environment variable")
 
-    AUTHORITY = "https://login.microsoftonline.com/udacityhol.onmicrosoft.com"  # For multi-tenant app, else put tenant name
+    AUTHORITY = "https://login.microsoftonline.com/harismuhammadhotmail.onmicrosoft.com"  # For multi-tenant app, else put tenant name
     # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    CLIENT_ID = "d2eaedd7-307b-4f48-8adc-f07149e43f66"
+    CLIENT_ID = "eda12132-3075-4583-99b6-97b67efffdcb"
 
-    REDIRECT_PATH = "https://article-cms-09.azurewebsites.net/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
+    REDIRECT_PATH = "/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
 
     # You can find the proper permission names from this document
     # https://docs.microsoft.com/en-us/graph/permissions-reference
