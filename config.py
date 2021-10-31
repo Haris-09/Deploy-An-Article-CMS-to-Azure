@@ -3,14 +3,14 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY') or '0mt7Q~hRsSoitiZNsA9x7gHIUggXorPy12jvn'
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'usF7Q~hx-.Liz4KL1RJt59gNZaJ9t3CWM_06s'
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'articlecms'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'BG2tHbq0Q+yfek/QIPp5ano8YfpTVg6xlkABE7zgTOg41d9tv+mNmdkKEQnYIrlE017R+3QzuoDhywGEVJv2Lw=='
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'article-cms-container'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'mu4MjM67UohdkzFbqmR+GH+3caQO7mLpGXZBTwi0oW+wFZNRfx853xkz2OPwlASqjNZhBTNhzY0gq1Brsk7DHg=='
+    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'articlecms'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'articlecms-09.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'Article-CMS-Database'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'articlecms-09'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'articlecms-09'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'haris@09'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
@@ -19,7 +19,7 @@ class Config(object):
 
     ### Info for MS Authentication ###
     ### As adapted from: https://github.com/Azure-Samples/ms-identity-python-webapp ###
-    CLIENT_SECRET = "0mt7Q~hRsSoitiZNsA9x7gHIUggXorPy12jvn"
+    CLIENT_SECRET = 'usF7Q~hx-.Liz4KL1RJt59gNZaJ9t3CWM_06s'
     # In your production app, Microsoft recommends you to use other ways to store your secret,
     # such as KeyVault, or environment variable as described in Flask's documentation here:
     # https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
@@ -27,12 +27,12 @@ class Config(object):
     # if not CLIENT_SECRET:
     #     raise ValueError("Need to define CLIENT_SECRET environment variable")
 
-    AUTHORITY = "https://login.microsoftonline.com/harismuhammadhotmail.onmicrosoft.com"  # For multi-tenant app, else put tenant name
+    AUTHORITY = "https://login.microsoftonline.com/common"  # For multi-tenant app, else put tenant name
     # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    CLIENT_ID = "eda12132-3075-4583-99b6-97b67efffdcb"
+    CLIENT_ID = 'ef69a5cc-fe61-4309-adc7-bed17947755c'
 
-    REDIRECT_PATH = "https://articlecms09.azurewebsites.ne/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
+    REDIRECT_PATH = "https://articlecms09.azurewebsites.net/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
 
     # You can find the proper permission names from this document
     # https://docs.microsoft.com/en-us/graph/permissions-reference
