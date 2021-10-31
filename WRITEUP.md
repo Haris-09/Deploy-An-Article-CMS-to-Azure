@@ -1,6 +1,4 @@
-# Write-up Template
-
-### Analyze, choose, and justify the appropriate resource option for deploying the app.
+## Analyze, choose, and justify the appropriate resource option for deploying the app.
 
 #### App Service:
 Azure WebApps is a fast and simple way to create web apps. it has build-in CI/CD integration and has zero downtime deployments. complexity level is less which makes it easier to manage and also less in cost compared to VM. App Service costs less.
